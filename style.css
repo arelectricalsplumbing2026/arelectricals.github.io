@@ -5,21 +5,45 @@ box-sizing:border-box;
 font-family:Arial;
 }
 
+
 header{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
+
 padding:20px;
+
 background:black;
+
 color:white;
+
 }
 
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
+
+.logo{
+
+font-size:24px;
+
 font-weight:bold;
+
 }
+
+
+nav a{
+
+color:white;
+
+margin-left:20px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
 
 .hero{
 
@@ -32,7 +56,9 @@ background-size:cover;
 background-position:center;
 
 display:flex;
+
 align-items:center;
+
 justify-content:center;
 
 text-align:center;
@@ -41,6 +67,7 @@ position:relative;
 
 }
 
+
 .hero::before{
 
 content:"";
@@ -48,6 +75,7 @@ content:"";
 position:absolute;
 
 width:100%;
+
 height:100%;
 
 background:rgba(0,0,0,0.6);
@@ -55,6 +83,7 @@ background:rgba(0,0,0,0.6);
 backdrop-filter:blur(4px);
 
 }
+
 
 .hero-content{
 
@@ -66,15 +95,24 @@ max-width:600px;
 
 }
 
+
 .hero h1{
+
 font-size:50px;
+
 margin-bottom:20px;
+
 }
 
+
 .hero p{
+
 font-size:20px;
+
 margin-bottom:30px;
+
 }
+
 
 .btn{
 
@@ -94,10 +132,15 @@ font-weight:bold;
 
 }
 
+
 .whatsapp{
+
 background:#25D366;
+
 color:white;
+
 }
+
 
 .services{
 
@@ -106,6 +149,7 @@ padding:60px;
 text-align:center;
 
 }
+
 
 .service-container{
 
@@ -119,6 +163,7 @@ margin-top:40px;
 
 }
 
+
 .service-box{
 
 background:#f4f4f4;
@@ -128,6 +173,7 @@ padding:25px;
 border-radius:10px;
 
 }
+
 
 .project{
 
@@ -140,6 +186,7 @@ padding:60px;
 text-align:center;
 
 }
+
 
 .project-box{
 
@@ -155,6 +202,7 @@ margin:auto;
 
 }
 
+
 footer{
 
 background:black;
@@ -166,10 +214,17 @@ text-align:center;
 padding:20px;
 
 }
+
+
 .red{
+
 color:#d60000;
+
 }
 
+
 .blue{
+
 color:#1a3cff;
+
 }
