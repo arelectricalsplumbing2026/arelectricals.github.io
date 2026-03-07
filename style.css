@@ -9,15 +9,10 @@ font-family:Arial;
 header{
 
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 padding:20px;
-
 background:black;
-
 color:white;
 
 }
@@ -26,7 +21,6 @@ color:white;
 .logo{
 
 font-size:24px;
-
 font-weight:bold;
 
 }
@@ -35,11 +29,8 @@ font-weight:bold;
 nav a{
 
 color:white;
-
 margin-left:20px;
-
 text-decoration:none;
-
 font-weight:bold;
 
 }
@@ -56,11 +47,8 @@ background-size:cover;
 background-position:center;
 
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 text-align:center;
 
 position:relative;
@@ -71,15 +59,10 @@ position:relative;
 .hero::before{
 
 content:"";
-
 position:absolute;
-
 width:100%;
-
 height:100%;
-
 background:rgba(0,0,0,0.6);
-
 backdrop-filter:blur(4px);
 
 }
@@ -88,9 +71,7 @@ backdrop-filter:blur(4px);
 .hero-content{
 
 position:relative;
-
 color:white;
-
 max-width:600px;
 
 }
@@ -99,7 +80,6 @@ max-width:600px;
 .hero h1{
 
 font-size:50px;
-
 margin-bottom:20px;
 
 }
@@ -108,7 +88,6 @@ margin-bottom:20px;
 .hero p{
 
 font-size:20px;
-
 margin-bottom:30px;
 
 }
@@ -117,17 +96,11 @@ margin-bottom:30px;
 .btn{
 
 background:#f1c40f;
-
 color:black;
-
 padding:12px 25px;
-
 text-decoration:none;
-
 margin:10px;
-
 border-radius:5px;
-
 font-weight:bold;
 
 }
@@ -136,7 +109,6 @@ font-weight:bold;
 .whatsapp{
 
 background:#25D366;
-
 color:white;
 
 }
@@ -145,7 +117,6 @@ color:white;
 .services{
 
 padding:60px;
-
 text-align:center;
 
 }
@@ -167,9 +138,7 @@ margin-top:40px;
 .service-box{
 
 background:#f4f4f4;
-
 padding:25px;
-
 border-radius:10px;
 
 }
@@ -178,11 +147,8 @@ border-radius:10px;
 .project{
 
 background:#222;
-
 color:white;
-
 padding:60px;
-
 text-align:center;
 
 }
@@ -191,13 +157,9 @@ text-align:center;
 .project-box{
 
 background:#333;
-
 padding:30px;
-
 border-radius:10px;
-
 max-width:500px;
-
 margin:auto;
 
 }
@@ -206,11 +168,8 @@ margin:auto;
 footer{
 
 background:black;
-
 color:white;
-
 text-align:center;
-
 padding:20px;
 
 }
@@ -226,5 +185,44 @@ color:#d60000;
 .blue{
 
 color:#1a3cff;
+
+}
+
+
+
+/* WhatsApp Floating Button */
+
+.whatsapp-float{
+
+position:fixed;
+bottom:25px;
+right:25px;
+
+background:#25D366;
+color:white;
+
+font-size:28px;
+
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+
+z-index:1000;
+
+}
+
+
+.whatsapp-float:hover{
+
+background:#1ebe5d;
 
 }
