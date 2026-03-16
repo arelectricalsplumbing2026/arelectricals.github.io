@@ -207,3 +207,39 @@ justify-content:center;
 border-radius:50%;
 text-decoration:none;
 }
+/* PARTNERS */
+
+.partners{
+padding:60px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.partners h2{
+margin-bottom:40px;
+font-size:32px;
+}
+
+.partners .service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:900px;
+margin:auto;
+}
+
+.partners .service-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+font-size:20px;
+font-weight:bold;
+}
+/* PARTNER LOGOS */
+
+.partner-logo{
+height:70px;
+margin-bottom:15px;
+object-fit:contain;
+}
