@@ -243,3 +243,30 @@ height:70px;
 margin-bottom:15px;
 object-fit:contain;
 }
+/* STATS SECTION */
+
+.stats{
+padding:60px;
+background:#222;
+color:white;
+text-align:center;
+}
+
+.stats-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.stat-box{
+background:#333;
+padding:30px;
+border-radius:10px;
+}
+
+.stat-box h3{
+font-size:36px;
+margin-bottom:10px;
+color:#f1c40f;
+}
