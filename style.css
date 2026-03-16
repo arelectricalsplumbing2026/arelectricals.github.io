@@ -26,19 +26,8 @@ gap:10px;
 height:40px;
 }
 
-.logo-text{
-font-size:22px;
-font-weight:bold;
-color:white;
-}
-
-.red{
-color:#d60000;
-}
-
-.blue{
-color:#1a3cff;
-}
+.red{color:#d60000;}
+.blue{color:#1a3cff;}
 
 .menu a{
 color:white;
@@ -47,7 +36,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 height:90vh;
@@ -80,10 +69,6 @@ font-size:50px;
 margin-bottom:20px;
 }
 
-.hero p{
-font-size:18px;
-}
-
 /* BUTTONS */
 
 .buttons{
@@ -95,10 +80,10 @@ gap:20px;
 
 .btn{
 background:#f1c40f;
-color:black;
 padding:12px 25px;
 border-radius:6px;
 text-decoration:none;
+color:black;
 font-weight:bold;
 }
 
@@ -107,27 +92,15 @@ background:#25D366;
 color:white;
 }
 
-/* ABOUT SECTION */
+/* SECTIONS */
 
-.about{
+.about,
+.services,
+.why-us,
+.contact{
 padding:60px;
 text-align:center;
 background:#f4f4f4;
-}
-
-.about p{
-max-width:900px;
-margin:auto;
-margin-top:20px;
-line-height:1.6;
-font-size:16px;
-}
-
-/* SERVICES */
-
-.services{
-padding:60px;
-text-align:center;
 }
 
 .service-grid{
@@ -144,7 +117,7 @@ border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* PROJECT SECTION */
+/* PROJECTS */
 
 .projects{
 padding:60px;
@@ -165,33 +138,20 @@ background:white;
 color:black;
 padding:25px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
 }
 
-/* PROJECT IMAGE SCROLL */
+/* IMAGE SCROLL */
 
 .project-images{
 display:flex;
 overflow-x:auto;
 gap:10px;
-padding:10px;
-scroll-snap-type:x mandatory;
+margin-bottom:10px;
 }
 
 .project-images img{
-height:220px;
-border-radius:8px;
-flex-shrink:0;
-scroll-snap-align:start;
-}
-
-.project-images::-webkit-scrollbar{
-height:6px;
-}
-
-.project-images::-webkit-scrollbar-thumb{
-background:#888;
-border-radius:10px;
+height:200px;
+border-radius:6px;
 }
 
 /* TEAM */
@@ -199,7 +159,6 @@ border-radius:10px;
 .team{
 padding:60px;
 text-align:center;
-background:#f4f4f4;
 }
 
 .team-slider{
@@ -222,18 +181,6 @@ object-fit:cover;
 border-radius:10px;
 }
 
-/* CONTACT */
-
-.contact{
-padding:60px;
-text-align:center;
-background:#f4f4f4;
-}
-
-.contact p{
-margin-top:10px;
-}
-
 /* FOOTER */
 
 footer{
@@ -243,7 +190,7 @@ text-align:center;
 padding:20px;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 
 .whatsapp-float{
 position:fixed;
@@ -259,10 +206,4 @@ align-items:center;
 justify-content:center;
 border-radius:50%;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:1000;
-}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
 }
