@@ -99,19 +99,7 @@ background:#25D366;
 color:white;
 }
 
-/* SECTIONS */
-
-.about,
-.services,
-.why-us,
-.contact{
-padding:60px;
-text-align:center;
-background:#f4f4f4;
-position:relative;
-}
-
-/* WATERMARK LOGO BACKGROUND */
+/* SECTIONS BACKGROUND */
 
 .about,
 .services,
@@ -119,8 +107,35 @@ position:relative;
 .contact{
 padding:80px 20px;
 text-align:center;
-background:#f4f4f4 url("images/AR Logo.jpeg") no-repeat center;
-background-size:350px;
+background-image:url("https://images.unsplash.com/photo-1621905251189-08b45d6a269e");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+position:relative;
+}
+
+/* LIGHT OVERLAY FOR TEXT */
+
+.about::before,
+.services::before,
+.why-us::before,
+.contact::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.90);
+z-index:1;
+}
+
+.about *,
+.services *,
+.why-us *,
+.contact *{
+position:relative;
+z-index:2;
 }
 
 /* SERVICES GRID */
@@ -133,7 +148,7 @@ margin-top:40px;
 }
 
 .service-card{
-background:rgba(255,255,255,0.9);
+background:white;
 padding:25px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
@@ -162,7 +177,7 @@ padding:25px;
 border-radius:10px;
 }
 
-/* IMAGE SCROLL */
+/* PROJECT IMAGE SCROLL */
 
 .project-images{
 display:flex;
@@ -201,33 +216,6 @@ width:100%;
 height:300px;
 object-fit:cover;
 border-radius:10px;
-}
-
-/* FOOTER */
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-/* WHATSAPP */
-
-.whatsapp-float{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-font-size:28px;
-width:60px;
-height:60px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-text-decoration:none;
 }
 
 /* PARTNERS */
@@ -294,4 +282,31 @@ border-radius:10px;
 font-size:36px;
 margin-bottom:10px;
 color:#f1c40f;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP FLOAT BUTTON */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+font-size:28px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
 }
