@@ -5,8 +5,6 @@ box-sizing:border-box;
 font-family:Arial;
 }
 
-/* HEADER */
-
 header{
 display:flex;
 justify-content:space-between;
@@ -16,19 +14,27 @@ background:black;
 color:white;
 }
 
-.logo{
-font-size:24px;
+.logo-section{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.site-logo{
+height:45px;
+}
+
+.logo-text{
+font-size:22px;
 font-weight:bold;
 }
 
-nav a{
+.menu a{
 color:white;
 margin-left:20px;
 text-decoration:none;
 font-weight:bold;
 }
-
-/* HERO SECTION */
 
 .hero{
 height:90vh;
@@ -48,7 +54,6 @@ position:absolute;
 width:100%;
 height:100%;
 background:rgba(0,0,0,0.6);
-backdrop-filter:blur(4px);
 }
 
 .hero-content{
@@ -62,20 +67,13 @@ font-size:50px;
 margin-bottom:20px;
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-/* BUTTONS */
-
 .btn{
 background:#f1c40f;
 color:black;
 padding:12px 25px;
-text-decoration:none;
 margin:10px;
 border-radius:5px;
+text-decoration:none;
 font-weight:bold;
 }
 
@@ -84,29 +82,51 @@ background:#25D366;
 color:white;
 }
 
-/* SERVICES */
-
-.services{
+.about,
+.services,
+.why-us,
+.partners,
+.contact{
 padding:60px;
 text-align:center;
 }
 
-.service-container{
+.service-grid,
+.why-grid,
+.partner-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 margin-top:40px;
 }
 
-.service-box{
+.service-card,
+.why-card,
+.partner-card{
 background:white;
 padding:25px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
-color:black;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* PROJECT SECTION */
+.stats{
+background:#222;
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.stat-box h3{
+font-size:40px;
+color:#f1c40f;
+}
 
 .project{
 background:#222;
@@ -114,8 +134,6 @@ color:white;
 padding:60px;
 text-align:center;
 }
-
-/* PROJECT CARDS */
 
 .project-container{
 display:grid;
@@ -133,82 +151,18 @@ box-shadow:0 6px 18px rgba(0,0,0,0.15);
 padding-bottom:20px;
 }
 
-/* IMAGE SCROLL SLIDER */
-
 .project-images{
 display:flex;
 overflow-x:auto;
-gap:12px;
+gap:10px;
 padding:10px;
-scroll-snap-type:x mandatory;
 }
 
 .project-images img{
 height:220px;
 border-radius:8px;
 flex-shrink:0;
-scroll-snap-align:start;
 }
-
-/* scrollbar style */
-
-.project-images::-webkit-scrollbar{
-height:6px;
-}
-
-.project-images::-webkit-scrollbar-thumb{
-background:#888;
-border-radius:10px;
-}
-
-/* PROJECT TEXT */
-
-.project-card h3{
-margin-top:10px;
-}
-
-.project-card p{
-margin:6px 0;
-padding:0 15px;
-}
-
-.project-card a{
-display:inline-block;
-margin-top:10px;
-color:#1a3cff;
-font-weight:bold;
-text-decoration:none;
-}
-
-/* TEAM */
-
-.team{
-padding:60px;
-text-align:center;
-background:#f4f4f4;
-}
-
-.team-slider{
-max-width:350px;
-margin:auto;
-}
-
-.team-member{
-display:none;
-}
-
-.team-member.active{
-display:block;
-}
-
-.team-member img{
-width:100%;
-height:300px;
-object-fit:cover;
-border-radius:10px;
-}
-
-/* FOOTER */
 
 footer{
 background:black;
@@ -216,18 +170,6 @@ color:white;
 text-align:center;
 padding:20px;
 }
-
-/* LOGO COLORS */
-
-.red{
-color:#d60000;
-}
-
-.blue{
-color:#1a3cff;
-}
-
-/* WHATSAPP BUTTON */
 
 .whatsapp-float{
 position:fixed;
@@ -243,10 +185,4 @@ align-items:center;
 justify-content:center;
 border-radius:50%;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-z-index:1000;
-}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
 }
