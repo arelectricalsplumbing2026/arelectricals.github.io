@@ -342,11 +342,42 @@ text-align:center;
 padding:15px;
 font-weight:bold;
 }
-.qr-section img{
-width:90px !important;
+/* QR SECTION - PRO DESIGN */
+.qr-section{
+margin-top:40px;
+text-align:center;
+}
+
+.qr-section h3{
+font-size:22px;
+margin-bottom:8px;
+}
+
+.qr-section p{
+font-size:14px;
+color:#555;
+margin-bottom:20px;
+}
+
+/* QR CARD */
+.qr-box{
+background:white;
+padding:25px;
+border-radius:16px;
+display:inline-block;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+/* QR IMAGE */
+.qr-box img{
+width:130px;
 height:auto;
 display:block;
-margin:10px auto;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* HOVER EFFECT */
+.qr-box:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
