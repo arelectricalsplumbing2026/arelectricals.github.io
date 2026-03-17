@@ -14,20 +14,23 @@ let index = 0;
 
 members[index].classList.add("active");
 
-/* team slider */
+<script>
+document.addEventListener("DOMContentLoaded", function(){
 
-setInterval(function(){
+let members = document.querySelectorAll(".team-member");
+let index = 0;
 
+// show first
+members[0].classList.add("active");
+
+setInterval(() => {
 members[index].classList.remove("active");
 
-index++;
-
-if(index >= members.length){
-index = 0;
-}
+index = (index + 1) % members.length;
 
 members[index].classList.add("active");
 
-},3000);
+}, 3000);
 
 });
+</script>
