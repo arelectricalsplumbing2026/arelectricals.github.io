@@ -277,7 +277,12 @@ padding:20px;
 border-radius:10px;
 width:280px;
 position:relative;
-text-align:left;
+text-align:center; /* changed */
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+min-height:180px;
 }
 
 .stars{
