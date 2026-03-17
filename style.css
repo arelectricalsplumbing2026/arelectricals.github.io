@@ -331,6 +331,45 @@ border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 font-size:16px;
 }
+.map{
+padding:60px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.map h2{
+margin-bottom:20px;
+}
+
+.map-buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.location-details{
+margin-top:25px;
+font-size:18px;
+line-height:1.8;
+}
+
+.location-details a{
+color:#1a3cff;
+text-decoration:none;
+font-weight:bold;
+}
+
+.qr-section{
+margin-top:30px;
+}
+
+.qr-section img{
+width:150px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 
 .review-card h4{
 margin-top:10px;
