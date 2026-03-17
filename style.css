@@ -71,7 +71,6 @@ background:var(--secondary);
 color:white;
 text-align:center;
 padding:10px;
-font-weight:500;
 }
 
 /* HERO */
@@ -90,7 +89,7 @@ color:white;
 
 .hero-content{
 max-width:650px;
-animation:fadeUp 1.2s ease;
+animation:fadeUp 1s ease;
 }
 
 .hero h1{
@@ -125,19 +124,19 @@ background:#25D366;
 color:white;
 }
 
-/* SECTION GLOBAL */
+/* SECTION */
 section{
 padding:80px 20px;
-max-width:1200px;
+max-width:1100px;
 margin:auto;
-animation:fadeUp 0.8s ease;
+animation:fadeUp 0.7s ease;
 }
 
 /* HEADINGS */
 h2{
-font-size:32px;
-margin-bottom:15px;
 text-align:center;
+font-size:32px;
+margin-bottom:10px;
 }
 
 h2::after{
@@ -147,7 +146,6 @@ height:4px;
 background:var(--accent);
 display:block;
 margin:10px auto;
-border-radius:5px;
 }
 
 /* GRID */
@@ -179,73 +177,15 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
-/* REVIEWS */
-.review-card{
-text-align:center;
-font-size:15px;
+/* REVIEW STARS */
+.review-card::before{
+content:"★★★★★";
+color:gold;
+display:block;
+margin-bottom:8px;
 }
 
-/* MAP */
-.map iframe{
-width:100%;
-height:350px;
-border-radius:12px;
-}
-
-.map-buttons{
-margin-top:20px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.location-details{
-margin-top:15px;
-font-weight:500;
-}
-
-/* QR */
-.qr-section{
-margin-top:30px;
-text-align:center;
-}
-
-.qr-box{
-background:white;
-padding:20px;
-border-radius:15px;
-display:inline-block;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-.qr-section img{
-width:140px;
-}
-
-/* STATS */
-.stats{
-background:var(--secondary);
-color:white;
-padding:80px 20px;
-}
-
-.stat-box{
-background:#2c3e50;
-text-align:center;
-}
-
-.stat-box h3{
-font-size:34px;
-color:var(--accent);
-margin-bottom:10px;
-}
-
-.stat-box p{
-color:#ddd;
-}
-
-/* PROJECTS */
+/* PROJECT */
 .projects{
 background:var(--secondary);
 color:white;
@@ -312,26 +252,92 @@ border-radius:10px;
 }
 
 /* PARTNERS */
-.partners{
-background:var(--light);
-}
-
 .partner-logo{
 height:110px;
-margin-bottom:10px;
+object-fit:contain;
+display:block;
+margin:0 auto 10px;
+}
+
+/* MAP + CONTACT ALIGN FIX */
+.map,
+.contact{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.map iframe{
+width:100%;
+height:350px;
+border-radius:12px;
+}
+
+.map-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.location-details{
+text-align:center;
+margin-top:15px;
+}
+
+/* QR */
+.qr-section{
+text-align:center;
+margin-top:30px;
+}
+
+.qr-box{
+display:inline-block;
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.qr-section img{
+width:140px;
+}
+
+/* STATS */
+.stats{
+background:var(--secondary);
+color:white;
+}
+
+.stat-box{
+background:#2c3e50;
+text-align:center;
+}
+
+.stat-box h3{
+color:var(--accent);
+font-size:32px;
 }
 
 /* CONTACT */
 .contact{
-background:var(--light);
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.contact p{
+margin:6px 0;
 }
 
 /* FOOTER */
 footer{
 background:var(--primary);
 color:white;
-padding:25px;
 text-align:center;
+padding:25px;
 }
 
 /* WHATSAPP */
@@ -371,60 +377,4 @@ font-size:30px;
 .buttons{
 flex-direction:column;
 }
-}
-
-/* ⭐ REVIEW STARS FIX */
-.review-card{
-text-align:center;
-font-size:15px;
-}
-
-.review-card{
-color:#333;
-}
-
-.review-card::before{
-content:"★★★★★";
-color:gold;
-font-size:18px;
-display:block;
-margin-bottom:8px;
-}
-
-/* 📍 PROJECT BUTTON FIX */
-.project-content a{
-display:inline-block;
-margin-top:10px;
-background:#fca311;
-padding:8px 15px;
-border-radius:6px;
-color:black !important;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-.project-content a:hover{
-background:#ffba08;
-transform:scale(1.05);
-}
-
-/* 🖼️ PARTNER LOGO FIX */
-.partner-logo{
-height:110px;
-object-fit:contain;
-display:block;
-margin:0 auto 10px;
-}
-
-/* 🧱 BETTER CARD HEIGHT FIX */
-.service-card,
-.project-card,
-.review-card{
-min-height:180px;
-}
-
-/* 📍 MAP BUTTON ALIGN FIX */
-.map-buttons a{
-display:inline-block;
 }
