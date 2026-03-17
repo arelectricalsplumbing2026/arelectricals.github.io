@@ -6,7 +6,39 @@
 <title>AR Electricals & Plumbing</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+document.querySelectorAll(".project-images").forEach(container => {
+let images = container.querySelectorAll("img");
+let index = 0;
 
+images.forEach((img, i) => {
+img.style.display = i === 0 ? "block" : "none";
+});
+
+setInterval(() => {
+images[index].style.display = "none";
+index = (index + 1) % images.length;
+images[index].style.display = "block";
+}, 3000);
+});
+</script>
+  <script>
+let teamSlider = document.querySelector(".team-slider");
+let scrollAmount = 0;
+
+setInterval(() => {
+scrollAmount += 260;
+
+if (scrollAmount >= teamSlider.scrollWidth) {
+scrollAmount = 0;
+}
+
+teamSlider.scrollTo({
+left: scrollAmount,
+behavior: "smooth"
+});
+}, 3000);
+</script>
 <body>
 
 <header>
@@ -208,28 +240,53 @@ style="border:0;">
 
 <!-- PROJECTS -->
 <section class="projects" id="projects">
+
 <h2>Current Ongoing Projects</h2>
 
 <div class="project-grid">
 
+<!-- PROJECT CARD 1 -->
 <div class="project-card">
+
 <div class="project-images">
 <img src="images/Wakad1.jpeg">
 <img src="images/Wakad2.jpeg">
-</div>
-<div class="project-content">
-<h3>Wakad – Kaspate Vasti</h3>
-</div>
+<img src="images/Wakad3.jpeg">
+<img src="images/Wakad4.jpeg">
 </div>
 
+<div class="project-content">
+<h3>Wakad – Kaspate Vasti</h3>
+<p>Owner: Nilkanttam Swami</p>
+<p>Electrical & Plumbing Work</p>
+
+<a href="https://maps.app.goo.gl/rP2132pzMt2zBCFF6" target="_blank">
+📍 View Location
+</a>
+</div>
+
+</div>
+
+<!-- PROJECT CARD 2 -->
 <div class="project-card">
+
 <div class="project-images">
 <img src="images/Pimpale1.jpeg">
 <img src="images/Pimpale2.jpeg">
+<img src="images/Pimpale3.jpeg">
+<img src="images/Pimpale4.jpeg">
 </div>
+
 <div class="project-content">
 <h3>Pimpale Gurav</h3>
+<p>Owner: Mr. P.V.P Pillai</p>
+<p>Electrical & Plumbing Work</p>
+
+<a href="https://maps.app.goo.gl/x49SBG2PamRRGm6s5" target="_blank">
+📍 View Location
+</a>
 </div>
+
 </div>
 
 </div>
@@ -237,6 +294,7 @@ style="border:0;">
 
 <!-- TEAM -->
 <section class="team" id="team">
+
 <h2>Our Team</h2>
 
 <div class="team-slider">
@@ -244,16 +302,61 @@ style="border:0;">
 <div class="team-member">
 <img src="images/abhijeet.jpg">
 <h3>Abhijeet Ghuge</h3>
+<p>Founder – AR Electricals & Plumbing</p>
+<p>📞 +91 96578 45263</p>
 </div>
 
 <div class="team-member">
 <img src="images/ravikiran.jpg">
 <h3>Ravikiran Wagh</h3>
+<p>Electrical & Plumbing Specialist</p>
+</div>
+
+<div class="team-member">
+<img src="images/rabha.jpg">
+<h3>Rabha Khemnar</h3>
+<p>Electrical & Plumber Helper</p>
+</div>
+
+<div class="team-member">
+<img src="images/vishal.jpg">
+<h3>Vishal Sose</h3>
+<p>Electrical & Plumber Helper</p>
+</div>
+
+<div class="team-member">
+<img src="images/vinod.jpg">
+<h3>Vinod Ghuge</h3>
+<p>Camera Fitting Expert</p>
+</div>
+
+<div class="team-member">
+<img src="images/sandeep.jpg">
+<h3>Sandeep Sose</h3>
+<p>Plumbing Helper</p>
+</div>
+
+<div class="team-member">
+<img src="images/pravin.jpg">
+<h3>Pravin Burkul</h3>
+<p>Electrical Helper</p>
+</div>
+
+<div class="team-member">
+<img src="images/ashutosh.jpg">
+<h3>Ashutosh Nagare</h3>
+<p>Electrical & Plumber Helper</p>
+</div>
+
+<div class="team-member">
+<img src="images/akash.jpg">
+<h3>Akash Ghuge</h3>
+<p>Electrical Helper</p>
 </div>
 
 </div>
+
 </section>
-
 <!-- PARTNERS -->
 <section class="partners">
 <h2>Our Partners</h2>
