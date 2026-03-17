@@ -17,20 +17,23 @@ members[index].classList.add("active");
 <script>
 document.addEventListener("DOMContentLoaded", function(){
 
-let members = document.querySelectorAll(".team-member");
+const slider = document.querySelector(".team-slider");
+const members = document.querySelectorAll(".team-member");
+
 let index = 0;
+const visible = 3;
 
-// show first
-members[0].classList.add("active");
+function slideTeam(){
+index++;
 
-setInterval(() => {
-members[index].classList.remove("active");
+if(index > members.length - visible){
+index = 0;
+}
 
-index = (index + 1) % members.length;
+slider.style.transform = `translateX(-${index * (100/visible)}%)`;
+}
 
-members[index].classList.add("active");
-
-}, 3000);
+setInterval(slideTeam, 3000);
 
 });
 </script>
