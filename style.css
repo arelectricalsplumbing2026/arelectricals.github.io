@@ -1,477 +1,68 @@
-/* ================= RESET ================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI', sans-serif;
-scroll-behavior:smooth;
-}
+/* ================= 🔥 FINAL PERFECT FIX ================= */
 
-html,body{
-width:100%;
-overflow-x:hidden;
-}
-
-/* ================= COLORS ================= */
-:root{
---primary:#0d1b2a;
---secondary:#1b263b;
---accent:#fca311;
---light:#f5f7fa;
---red:#ff3b3b;
---blue:#3b82f6;
-}
-
-/* ================= BODY ================= */
-body{
-background:var(--light);
-line-height:1.6;
-}
-
-/* ================= HEADER ================= */
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-background:var(--primary);
-color:white;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.logo-section{
-display:flex;
-align-items:center;
-gap:12px;
-}
-
-.site-logo{
-height:55px;
-width:auto;
-}
-
-.logo-text{
-font-size:26px;
-font-weight:700;
-}
-
-.red{color:var(--red);}
-.blue{color:var(--blue);}
-
-.menu{
-display:flex;
-align-items:center;
-}
-
-.menu a{
-color:white;
-margin-left:30px;
-text-decoration:none;
-font-weight:500;
-transition:0.3s;
-position:relative;
-}
-
-.menu a::after{
-content:"";
-position:absolute;
-bottom:-5px;
-left:0;
-width:0%;
-height:2px;
-background:var(--accent);
-transition:0.3s;
-}
-
-.menu a:hover::after{
-width:100%;
-}
-
-.menu a:hover{
-color:var(--accent);
-}
-
-/* ================= TRUST ================= */
-.trust{
-background:var(--secondary);
-color:white;
-text-align:center;
-padding:12px;
-font-weight:500;
-}
-
-/* ================= HERO ================= */
-.hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-}
-
-.hero-content{
-max-width:700px;
-animation:fadeUp 1s ease;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-/* ================= BUTTONS ================= */
-.buttons{
-margin-top:25px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-.btn{
-background:var(--accent);
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.whatsapp{
-background:#25D366;
-color:white;
-}
-
-/* ================= SECTION ================= */
-section{
-padding:80px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-/* ================= HEADINGS ================= */
-h2{
-text-align:center;
-font-size:32px;
-margin-bottom:10px;
-position:relative;
-}
-
-h2::after{
-content:"";
-width:60px;
-height:4px;
-background:var(--accent);
-display:block;
-margin:10px auto;
-border-radius:2px;
-}
-
-/* ================= GRID ================= */
-.service-grid,
-.review-container,
-.stats-container,
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-/* ================= CARDS ================= */
-.service-card,
-.review-card,
-.stat-box,
-.project-card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.3s;
-text-align:center;
-}
-
-.service-card:hover,
-.review-card:hover,
-.project-card:hover{
-transform:translateY(-8px);
-}
-
-/* ================= REVIEW ================= */
-.review-card::before{
-content:"★★★★★";
-color:gold;
-display:block;
-margin-bottom:8px;
-font-size:18px;
-}
-
-/* ================= PROJECT ================= */
-.projects{
-background:var(--secondary);
-color:white;
-}
-
-.project-card{
-color:black;
-overflow:hidden;
-}
-
-.project-images{
-display:flex;
-gap:10px;
-overflow-x:auto;
-padding:10px;
-scrollbar-width:none;
-}
-
-.project-images::-webkit-scrollbar{
-display:none;
-}
-
-.project-images img{
-height:200px;
-border-radius:10px;
-flex-shrink:0;
-}
-
-.project-content{
-padding:15px;
-}
-
-/* ================= TEAM ================= */
-.team-slider{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.team-member{
-background:white;
-padding:15px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-.team-member img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:10px;
-}
-
-/* ================= PARTNERS ================= */
-.partner-logo{
-height:100px;
-object-fit:contain;
-display:block;
-margin:0 auto 10px;
-}
-
-/* ================= MAP ================= */
-.map{
-text-align:center;
-}
-
+/* FIX MAP SECTION SPACING */
 .map iframe{
-width:100%;
-height:350px;
-border-radius:12px;
-border:none;
+display:block;
+margin-bottom:25px;
 }
 
-/* ================= MAP BUTTON ================= */
+/* FIX BUTTON OVERLAP PROPERLY */
 .map-buttons{
 display:flex;
 justify-content:center;
 gap:20px;
 flex-wrap:wrap;
-margin-top:20px;
+margin-top:10px;
+margin-bottom:15px;
+position:relative;
+z-index:1;
 }
 
-/* ================= LOCATION ================= */
+/* FIX LOCATION TEXT GOING INSIDE BUTTON */
 .location-details{
-text-align:center;
-margin-top:15px;
-font-size:16px;
-}
-
-/* ================= QR ================= */
-.qr-section{
-text-align:center;
-margin-top:30px;
-}
-
-.qr-box{
-display:inline-block;
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-.qr-section img{
-width:150px;
-}
-
-/* ================= STATS ================= */
-.stats{
-background:var(--secondary);
-color:white;
-}
-
-.stat-box{
-background:#2c3e50;
-text-align:center;
-}
-
-.stat-box h3{
-color:var(--accent);
-font-size:32px;
-margin-bottom:5px;
-}
-
-/* ================= CONTACT ================= */
-.contact{
-text-align:center;
-}
-
-.contact p{
-margin:6px 0;
-font-size:16px;
-}
-
-/* ================= FOOTER ================= */
-footer{
-background:var(--primary);
-color:white;
-text-align:center;
-padding:25px;
-font-size:14px;
-}
-
-/* ================= WHATSAPP ================= */
-.whatsapp-float{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-font-size:28px;
-width:60px;
-height:60px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-box-shadow:0 0 15px #25D366;
-z-index:999;
-}
-
-/* ================= ANIMATION ================= */
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-/* ================= MOBILE ================= */
-@media(max-width:768px){
-
-.hero h1{
-font-size:30px;
-}
-
-.buttons{
-flex-direction:column;
-}
-
-.menu{
-display:none;
-}
-
-}
-/* ================= FINAL LAYOUT FIX ================= */
-
-/* FORCE PROJECTS FULL WIDTH */
-.projects{
-width:100%;
 display:block;
+width:100%;
+text-align:center;
+margin-top:10px;
+clear:both;
 }
 
-/* FORCE TEAM BELOW PROJECTS */
+/* FORCE QR BELOW EVERYTHING */
+.qr-section{
+margin-top:25px;
+clear:both;
+}
+
+/* FIX SECTION STACKING ISSUE */
+.projects{
+clear:both;
+display:block;
+width:100%;
+}
+
 .team{
+clear:both;
+display:block;
 width:100%;
-margin-top:0;
+margin-top:40px;
 }
 
-.team-slider{
-display:grid !important;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-/* FIX TEAM CARD ALIGNMENT */
-.team-member{
-width:100%;
-max-width:300px;
-margin:auto;
-}
-
-/* FIX CONTACT CENTER */
+/* FIX CONTACT ALIGNMENT PERFECT CENTER */
 .contact{
-width:100%;
+clear:both;
+display:block;
 max-width:600px;
-margin:50px auto;
+margin:60px auto;
 text-align:center;
 }
 
-/* FIX FOOTER CENTER BOX ISSUE */
-footer{
+/* REMOVE ANY FLOAT/INLINE ISSUES */
+.project-grid,
+.team-slider{
 width:100%;
-text-align:center;
 }
 
-/* REMOVE SIDE SHIFT */
-section{
-width:100%;
-max-width:1200px;
-margin:0 auto;
-}
-
-/* FIX DARK SECTION ALIGNMENT */
-.projects,
-.stats{
-padding-left:20px;
-padding-right:20px;
-}
-
-/* PREVENT SIDE OVERFLOW */
-body{
-overflow-x:hidden;
+/* FIX BUTTON TEXT WRAP ISSUE */
+.btn{
+white-space:nowrap;
 }
