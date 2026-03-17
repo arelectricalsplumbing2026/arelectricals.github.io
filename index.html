@@ -6,39 +6,6 @@
 <title>AR Electricals & Plumbing</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<script>
-document.querySelectorAll(".project-images").forEach(container => {
-let images = container.querySelectorAll("img");
-let index = 0;
-
-images.forEach((img, i) => {
-img.style.display = i === 0 ? "block" : "none";
-});
-
-setInterval(() => {
-images[index].style.display = "none";
-index = (index + 1) % images.length;
-images[index].style.display = "block";
-}, 3000);
-});
-</script>
-  <script>
-let teamSlider = document.querySelector(".team-slider");
-let scrollAmount = 0;
-
-setInterval(() => {
-scrollAmount += 260;
-
-if (scrollAmount >= teamSlider.scrollWidth) {
-scrollAmount = 0;
-}
-
-teamSlider.scrollTo({
-left: scrollAmount,
-behavior: "smooth"
-});
-}, 3000);
-</script>
 <body>
 
 <header>
@@ -401,20 +368,44 @@ style="border:0;">
 
 <!-- TEAM AUTO SLIDER -->
 <script>
-let slider = document.querySelector(".team-slider");
+document.addEventListener("DOMContentLoaded", function(){
+
+// PROJECT IMAGE SLIDER (FADE)
+document.querySelectorAll(".project-images").forEach(container => {
+let images = container.querySelectorAll("img");
+let index = 0;
+
+images.forEach((img, i) => {
+img.style.opacity = i === 0 ? "1" : "0";
+img.style.position = "absolute";
+img.style.top = "0";
+img.style.left = "0";
+img.style.transition = "opacity 1s ease-in-out";
+});
+
+setInterval(() => {
+images[index].style.opacity = "0";
+index = (index + 1) % images.length;
+images[index].style.opacity = "1";
+}, 3000);
+});
+
+// TEAM SLIDER
+let teamSlider = document.querySelector(".team-slider");
 let scrollAmount = 0;
 
 setInterval(() => {
 scrollAmount += 270;
-if(scrollAmount >= slider.scrollWidth){
+
+if (scrollAmount >= teamSlider.scrollWidth - teamSlider.clientWidth) {
 scrollAmount = 0;
 }
-slider.scrollTo({
+
+teamSlider.scrollTo({
 left: scrollAmount,
 behavior: "smooth"
 });
 }, 3000);
-</script>
 
-</body>
-</html>
+});
+</script>
