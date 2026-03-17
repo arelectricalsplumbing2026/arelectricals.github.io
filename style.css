@@ -416,3 +416,62 @@ display:none;
 }
 
 }
+/* ================= FINAL LAYOUT FIX ================= */
+
+/* FORCE PROJECTS FULL WIDTH */
+.projects{
+width:100%;
+display:block;
+}
+
+/* FORCE TEAM BELOW PROJECTS */
+.team{
+width:100%;
+margin-top:0;
+}
+
+.team-slider{
+display:grid !important;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* FIX TEAM CARD ALIGNMENT */
+.team-member{
+width:100%;
+max-width:300px;
+margin:auto;
+}
+
+/* FIX CONTACT CENTER */
+.contact{
+width:100%;
+max-width:600px;
+margin:50px auto;
+text-align:center;
+}
+
+/* FIX FOOTER CENTER BOX ISSUE */
+footer{
+width:100%;
+text-align:center;
+}
+
+/* REMOVE SIDE SHIFT */
+section{
+width:100%;
+max-width:1200px;
+margin:0 auto;
+}
+
+/* FIX DARK SECTION ALIGNMENT */
+.projects,
+.stats{
+padding-left:20px;
+padding-right:20px;
+}
+
+/* PREVENT SIDE OVERFLOW */
+body{
+overflow-x:hidden;
+}
