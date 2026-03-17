@@ -342,3 +342,11 @@ text-align:center;
 padding:15px;
 font-weight:bold;
 }
+.qr-section img{
+width:90px !important;
+height:auto;
+display:block;
+margin:15px auto;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
