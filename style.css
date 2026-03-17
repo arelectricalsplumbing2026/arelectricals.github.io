@@ -372,3 +372,59 @@ font-size:30px;
 flex-direction:column;
 }
 }
+
+/* ⭐ REVIEW STARS FIX */
+.review-card{
+text-align:center;
+font-size:15px;
+}
+
+.review-card{
+color:#333;
+}
+
+.review-card::before{
+content:"★★★★★";
+color:gold;
+font-size:18px;
+display:block;
+margin-bottom:8px;
+}
+
+/* 📍 PROJECT BUTTON FIX */
+.project-content a{
+display:inline-block;
+margin-top:10px;
+background:#fca311;
+padding:8px 15px;
+border-radius:6px;
+color:black !important;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.project-content a:hover{
+background:#ffba08;
+transform:scale(1.05);
+}
+
+/* 🖼️ PARTNER LOGO FIX */
+.partner-logo{
+height:110px;
+object-fit:contain;
+display:block;
+margin:0 auto 10px;
+}
+
+/* 🧱 BETTER CARD HEIGHT FIX */
+.service-card,
+.project-card,
+.review-card{
+min-height:180px;
+}
+
+/* 📍 MAP BUTTON ALIGN FIX */
+.map-buttons a{
+display:inline-block;
+}
