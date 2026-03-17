@@ -198,22 +198,20 @@ object-fit:cover;
 padding:15px;
 }
 
-/* ===== TEAM FADE SLIDER ===== */
+/* ===== PREMIUM TEAM SLIDER ===== */
 .team-slider{
-position:relative;
-height:350px;
+display:flex;
 overflow:hidden;
+position:relative;
+width:100%;
 }
 
 .team-member{
-position:absolute;
-width:100%;
-top:0;
-left:0;
-opacity:0;
-transition:opacity 1s ease-in-out;
+min-width:33.33%;
+box-sizing:border-box;
+padding:10px;
+transition:transform 0.5s ease;
 }
-
 .team-member.active{
 opacity:1;
 }
