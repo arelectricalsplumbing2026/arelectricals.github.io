@@ -358,3 +358,11 @@ font-size:14px;
 border-top:1px solid #333;
 color:#aaa;
 }
+.project-images img{
+width:100%;
+display:none;
+}
+
+.project-images img:first-child{
+display:block;
+}
