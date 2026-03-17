@@ -358,11 +358,31 @@ font-size:14px;
 border-top:1px solid #333;
 color:#aaa;
 }
-.project-images img{
-width:100%;
-display:none;
+/* ===== PROJECT IMAGE SLIDER FIX ===== */
+.project-images{
+position:relative;
+height:180px;
+overflow:hidden;
 }
 
-.project-images img:first-child{
-display:block;
+.project-images img{
+width:100%;
+height:100%;
+object-fit:cover;
+position:absolute;
+top:0;
+left:0;
+}
+
+/* ===== TEAM SLIDER FIX ===== */
+.team-slider{
+display:flex;
+overflow-x:auto;
+scroll-behavior:smooth;
+gap:20px;
+}
+
+.team-member{
+min-width:250px;
+flex-shrink:0;
 }
