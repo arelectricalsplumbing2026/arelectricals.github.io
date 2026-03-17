@@ -1,68 +1,257 @@
-/* ================= 🔥 FINAL PERFECT FIX ================= */
-
-/* FIX MAP SECTION SPACING */
-.map iframe{
-display:block;
-margin-bottom:25px;
+/* ================= RESET ================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
 }
 
-/* FIX BUTTON OVERLAP PROPERLY */
+body{
+background:#0d1b2a;
+color:#fff;
+line-height:1.6;
+}
+
+/* ================= HEADER ================= */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#1b263b;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-section{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.site-logo{
+width:50px;
+height:50px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.logo-text{
+font-size:20px;
+font-weight:bold;
+}
+
+.red{color:#ff4d4d;}
+.blue{color:#00b4d8;}
+
+.menu a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#00b4d8;
+}
+
+/* ================= HERO ================= */
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1581090700227-4c4f50ed1b19');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+margin:5px;
+background:#00b4d8;
+color:#fff;
+text-decoration:none;
+border-radius:5px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0096c7;
+}
+
+.whatsapp{
+background:#25d366;
+}
+
+/* ================= SECTION ================= */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+/* ================= SERVICES ================= */
+.service-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.service-card{
+background:#1b263b;
+padding:20px;
+border-radius:10px;
+width:250px;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ================= REVIEWS ================= */
+.review-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.review-card{
+background:#1b263b;
+padding:20px;
+border-radius:10px;
+width:280px;
+}
+
+/* ================= MAP ================= */
+.map iframe{
+border-radius:10px;
+margin-bottom:20px;
+}
+
 .map-buttons{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:15px;
 flex-wrap:wrap;
-margin-top:10px;
-margin-bottom:15px;
-position:relative;
-z-index:1;
 }
 
-/* FIX LOCATION TEXT GOING INSIDE BUTTON */
-.location-details{
-display:block;
+/* ================= STATS ================= */
+.stats-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.stat-box{
+background:#1b263b;
+padding:20px;
+border-radius:10px;
+width:200px;
+}
+
+/* ================= PROJECTS ================= */
+.project-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.project-card{
+background:#1b263b;
+border-radius:10px;
+overflow:hidden;
+width:300px;
+}
+
+.project-images img{
 width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-content{
+padding:15px;
+}
+
+/* ================= TEAM ================= */
+.team-slider{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.team-member{
+background:#1b263b;
+padding:20px;
+border-radius:10px;
+width:220px;
+}
+
+.team-member img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+/* ================= PARTNERS ================= */
+.partner-logo{
+width:100px;
+margin-bottom:10px;
+}
+
+/* ================= CONTACT ================= */
+.contact-box{
+background:#1b263b;
+padding:30px;
+border-radius:10px;
+display:inline-block;
+}
+
+/* ================= FOOTER ================= */
+footer{
+background:#1b263b;
+padding:20px;
 text-align:center;
-margin-top:10px;
-clear:both;
-}
-
-/* FORCE QR BELOW EVERYTHING */
-.qr-section{
-margin-top:25px;
-clear:both;
-}
-
-/* FIX SECTION STACKING ISSUE */
-.projects{
-clear:both;
-display:block;
-width:100%;
-}
-
-.team{
-clear:both;
-display:block;
-width:100%;
 margin-top:40px;
 }
 
-/* FIX CONTACT ALIGNMENT PERFECT CENTER */
-.contact{
-clear:both;
-display:block;
-max-width:600px;
-margin:60px auto;
-text-align:center;
-}
-
-/* REMOVE ANY FLOAT/INLINE ISSUES */
-.project-grid,
-.team-slider{
-width:100%;
-}
-
-/* FIX BUTTON TEXT WRAP ISSUE */
-.btn{
-white-space:nowrap;
+/* ================= WHATSAPP FLOAT ================= */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
 }
