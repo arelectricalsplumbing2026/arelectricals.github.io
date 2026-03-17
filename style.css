@@ -444,3 +444,8 @@ transition:0.3s;
 .project-content a:hover{
 background:#ffba08;
 }
+/* FIX TEXT VISIBILITY ON DARK BG */
+.projects .project-content h3,
+.projects .project-content p{
+color:#111;
+}
