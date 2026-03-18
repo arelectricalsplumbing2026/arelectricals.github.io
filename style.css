@@ -90,8 +90,21 @@ border-radius:5px;
 transition:0.3s;
 }
 
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:5px;
+background:linear-gradient(45deg,#00b4d8,#0096c7);
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+transition:0.3s;
+font-weight:500;
+}
+
 .btn:hover{
-background:#0096c7;
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(0,180,216,0.4);
 }
 
 .whatsapp{
@@ -462,4 +475,84 @@ z-index:2;
 .hero-content{
 position:relative;
 z-index:2;
+}
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:10px;
+}
+
+.menu{
+margin-top:10px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero p{
+font-size:14px;
+padding:0 10px;
+}
+
+.service-grid{
+flex-direction:column;
+align-items:center;
+}
+
+.project-card{
+width:90%;
+}
+
+.team-member{
+min-width:100%;
+}
+
+}
+/* ===== PREMIUM CARD LOOK ===== */
+.service-card,
+.project-card,
+.review-card,
+.team-member,
+.stat-box{
+background:rgba(27,38,59,0.9);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.08);
+transition:0.3s ease;
+}
+
+/* hover effect */
+.service-card:hover,
+.project-card:hover,
+.review-card:hover,
+.team-member:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+/* ===== PREMIUM UI EXTRA ===== */
+
+/* STEP 3: SECTION SPACING */
+section{
+padding:70px 20px;
+}
+
+h2{
+margin-bottom:30px;
+font-size:28px;
+}
+
+/* STEP 4: PROJECT IMAGE ZOOM */
+.project-images img{
+transition:0.5s;
+}
+
+.project-card:hover img{
+transform:scale(1.1);
+}
+
+/* STEP 5: REVIEW TEXT IMPROVE */
+.review-card{
+line-height:1.8;
 }
