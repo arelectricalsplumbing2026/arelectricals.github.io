@@ -372,7 +372,27 @@ style="border:0;">
 
 <!-- TEAM AUTO SLIDER -->
 <script>
-document.addEventListener("DOMContentLoaded", function(){
+let slider = document.querySelector(".team-slider");
+...
+</script>
+
+<!-- ADD THIS BELOW -->
+<script>
+const elements = document.querySelectorAll(".fade-up");
+
+window.addEventListener("scroll", () => {
+elements.forEach(el => {
+const rect = el.getBoundingClientRect();
+
+if(rect.top < window.innerHeight - 100){
+el.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>
 
 // PROJECT IMAGE SLIDER (FADE)
 document.querySelectorAll(".project-images").forEach(container => {
